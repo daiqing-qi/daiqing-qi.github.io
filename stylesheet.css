@@ -123,8 +123,10 @@ papertitle {
 }
 
 name {
+  /*margin-top: 0;*/
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  /*font-size: 32px;*/
+  font-size: 25px;
 }
 
 .one {

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Daiqing Qi @ UVA</title>
+  <title>Daiqing (Dacian) Qi</title>
   
   <meta name="author" content="Daiqing Qi">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -416,11 +416,16 @@
 </table>
 
 <script>
+  // let currentImage = 0;
+  // let images = document.querySelectorAll('.gallery-images img');
+  // let imageCount = images.length;
   let currentImage = 0;
   let images = document.querySelectorAll('.gallery-images img');
+  images = Array.from(images).sort(() => Math.random() - 0.5); // 打乱顺序
   let imageCount = images.length;
+  showNextImage(); // 随机展示一张照片
 
-  // setInterval(showNextImage, 100000);
+  // setInterval(showNextImage, 99999);
 
 function showNextImage() {
   let nextImage = currentImage + 1;

@@ -22,6 +22,18 @@ a:hover {
   text-decoration: none;
 }
 
+/* User Defined: profile size; */
+  .hoverZoomLink img {
+    width: 70%;
+    max-width: 90%;
+  }
+  @media only screen and (max-width: 768px) {
+    .hoverZoomLink img {
+      width: 90%;
+    }
+  }
+
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -126,7 +138,15 @@ name {
   /*margin-top: 0;*/
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   /*font-size: 32px;*/
-  font-size: 25px;
+  font-size: 32px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  name {
+    font-size: 20px;
+    text-align: left;
+  }
 }
 
 .one {

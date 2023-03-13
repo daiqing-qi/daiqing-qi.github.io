@@ -1,143 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <title>Film</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #FFFFFF;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    .heading {
-      font-size: 36px;
-      font-weight: normal;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    
-    .gallery-item {
-      flex: 0 0 calc(33.33% - 10px);
-      margin-bottom: 20px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.3s ease-in-out;
-    }
-    
-    .gallery-item:hover {
-      transform: scale(1.1);
-    }
-    
-    .gallery-item img {
-      max-width: 100%;
-      height: auto;
-      transition: opacity 0.3s ease-in-out;
-    }
-    
-    .gallery-item:hover img {
-      opacity: 1;
-    }
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 样式表 */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+}
 
-    .modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #FFFFFF;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .album {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            border-radius: 0px;
+            cursor: pointer;
+        }
+        .album img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
 
-    .modal img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
+        .album .caption {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          font-size: 1.2em;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
 
-    mytext {
-    /*margin-top: 0;*/
-    font-family: 'Lato';
-    /*font-size: 32px;*/
-    font-size: 18px;
-    text-align: left;
-    }
+        .album:hover img {
+            transform: scale(1.05);
+        }
+        .album:hover .caption {
+            opacity: 1;
+        }
 
-  </style>
+      /* 使垂直分布 */
+/*      body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }  
+*/
+        mytext {
+        /*margin-top: 0;*/
+        font-family: 'Lato';
+        /*font-size: 32px;*/
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        }
+
+    </style>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+    <br>
+    <br>
+    <br>
 
+    <mytext> Gallery </mytext>
 
-  <div class="container">
-    <!-- <h1 class="heading">Film</h1> -->
-<!--     <p>
-      <mytext> Daily collections </mytext>
-    </p> -->
-    
-    <div class="gallery">
+    <br>
+    <br>
+    <br>
+      <div class="container">
+          <!-- 相册分类集内容 -->
+          <a class="album" href="daily.html">
+              <img src="https://raw.githubusercontent.com/dacian98/images/main/285555844_170627852025429_8572303857116918707_n%20(1).jpeg">
+              <div class="caption">Life as I See</div>
+          </a>
 
-    <div class="gallery-item">
-      <img src="https://raw.githubusercontent.com/dacian98/images/main/20230310174352.png" alt="Photo 1" onclick="openModal(this)">
-    </div>
-    <div class="gallery-item">
-      <img src="https://raw.githubusercontent.com/dacian98/images/main/285555844_170627852025429_8572303857116918707_n.jpeg" onclick="openModal(this, 'Example')">
-    </div>
-    <div class="gallery-item">
-      <img src="https://raw.githubusercontent.com/dacian98/images/main/269996845_305198551520042_2172113714766455614_n.jpeg" onclick="openModal(this)">
-    </div>
-    <div class="gallery-item">
-      <img src="https://raw.githubusercontent.com/dacian98/images/main/278619042_152610437244420_2212313504343868573_n.jpeg" onclick="openModal(this)">
-    </div>
-    <div class="gallery-item">
-      <img src="https://raw.githubusercontent.com/dacian98/images/main/275768840_505977297579293_8732777314684834308_n.jpeg" onclick="openModal(this)">
-    </div>
-    <div class="gallery-item">
-          <img src="https://raw.githubusercontent.com/dacian98/images/main/244179262_1049559285832926_5642568330987587731_n.png" onclick="openModal(this)">
-        </div>
+          <a class="album" href="places.html">
+              <img src="https://raw.githubusercontent.com/dacian98/images/main/DSC_0506.jpg">
+              <div class="caption">Common Places</div>
+          </a>
+
+          <a class="album" href="drifting.html">
+              <img src="https://raw.githubusercontent.com/dacian98/images/main/DAC_2212%202.jpg">
+              <div class="caption">Life in Drifting</div>
+          </a>
+
 
     </div>
-  </div>
-
-  <!-- 将 openModal 函数放在 script 标签中 -->
-  <script>
-function openModal(img) {
-  // 创建模态框元素
-  var modal = document.createElement('div');
-  modal.classList.add('modal');
-  
-  // 创建图像元素
-  var modalImg = document.createElement('img');
-  modalImg.src = img.src;
-
-  // 添加图像和标题元素到模态框中
-  modal.appendChild(modalImg);
-  
-  // 添加模态框到文档中
-  document.body.appendChild(modal);
-  
-  // 点击模态框时关闭模态框
-  modal.onclick = function() {
-    document.body.removeChild(modal);
-  }
-}
-  </script>
-
-
 </body>
 </html>

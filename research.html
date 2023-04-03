@@ -214,7 +214,7 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <heading>About Me</heading>
               <p>
-                I love photography. I post some of my works on my <a href="https://www.instagram.com/cassadore07/">Instagram</a> and my <a href="https://daiqing7.github.io/">Blog</a> (no longer updated).
+                I love photography. I post some of my works on my <a href="https://www.instagram.com/cassadore07/">Instagram</a>, <a href="gallery.html">Gallery</a> and my <a href="https://daiqing7.github.io/">Blog</a> (no longer updated). 
               </p>
               <p>
                 I play the Auto Battler game (a subgenre of strategy video games)  and was among top 150 (ranked <red>#116</red>) best players  nationwide (2020).
@@ -224,204 +224,32 @@
         </tbody></table>        
 
         <!-- --------------- Section: Gallery --------------- -->
- <!--        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:2.5%;width:100%;vertical-align:middle">
-                <heading>Gallery</heading>
-                <div class="gallery-container">
-                  <div class="gallery-images">
-          
-                    <img src="https://raw.githubusercontent.com/dacian98/images/main/20230310174352.png">
-                    <img src="https://raw.githubusercontent.com/dacian98/images/main/285555844_170627852025429_8572303857116918707_n.jpeg">
-                    <img src="https://raw.githubusercontent.com/dacian98/images/main/269996845_305198551520042_2172113714766455614_n.jpeg">
-                    <img src="https://raw.githubusercontent.com/dacian98/images/main/278619042_152610437244420_2212313504343868573_n.jpeg">
-                    <img src="https://raw.githubusercontent.com/dacian98/images/main/275768840_505977297579293_8732777314684834308_n.jpeg">
 
-                  </div>
-                  <div class="gallery-dots">
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-                <br>
-              </td>
-            </tr>
-          </tbody>
-        </table>
 
-        <style>
-        .gallery-container {
-          position: relative;
-          width: 100%;
-          height: auto;
-          overflow: hidden;
-        }
-        .gallery-images {
-          position: relative;
-          width: 100%;
-          height: auto;
-          white-space: nowrap;
-          text-align: center;
-        }
-        .gallery-images img {
-          display: inline-block;
-          max-width: 60%;
-          height: auto;
-        }
-        .gallery-dots {
-          position: absolute;
-          bottom: 5%;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .gallery-dots span {
-          width: 8px;
-          height: 8px;
-          margin: 0 5px;
-          border-radius: 50%;
-          background-color: gray;
-          cursor: pointer;
-        }
-        .gallery-dots span.active {
-          background-color: black;
-        }
-        </style> -->
-<!-- 
-        <script>
-        const images = document.querySelector(".gallery-images");
-        const dots = document.querySelector(".gallery-dots");
-        const allImages = images.querySelectorAll("img");
-        const allDots = dots.querySelectorAll("span");
+  <style>
+      figcaption {
+      /*font-size: 0.2em;  Change to the desired font size */
+      font-size: 12px;
+      color: grey; /* Change to the desired font color */
+      text-align: middle; /* Align the caption with the left side of the image */
+    }
+  </style>
 
-        let index = 0;
-        showImage(index);
-
-        // 显示指定位置的图片
-        function showImage(n) {
-          if (n > allImages.length - 1) {
-            index = 0;
-          } else if (n < 0) {
-            index = allImages.length - 1;
-          } else {
-            index = n;
-          }
-          allImages.forEach((img) => {
-            img.style.display = "none";
-          });
-          allDots.forEach((dot) => {
-            dot.classList.remove("active");
-          });
-          allImages[index].style.display = "inline-block";
-          allDots[index].classList.add("active");
-        }
-
-        // 自动切换图片
-        let timer = setInterval(() => {
-          index++;
-          showImage(index);
-        }, 100000);
-
-        // 当鼠标悬停在Gallery上时，停止自动切换
-        images.addEventListener("mouseenter", () => {
-          clearInterval(timer);
-        });
-
-        // 当鼠标离开Gallery时，重新开始自动切换
-        images.addEventListener("mouseleave", () => {
-          timer = setInterval(() => {
-            index++;
-            showImage(index);
-          }, 100000);
-        });
-
-        // 为每个指示点添加点击事件，切换对应的图片
-        allDots.forEach((dot, dotIndex) => {
-        dot.addEventListener("click", () => {
-        showImage(dotIndex);
-          });
-        });
-        </script> -->
-
-<style>
-  .gallery-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .gallery-images {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
-  }
-
-  .gallery-images img {
-    width: 50%;
-    object-fit: contain;
-  }
-
-  .gallery-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    border: none;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-/*  .gallery-arrow:hover {
-    opacity: 1;
-  }
-*/
-
-  .gallery-container:hover .gallery-arrow {
-    opacity: 1;
-  }
-  .gallery-arrow-left {
-    left: 10px;
-  }
-
-  .gallery-arrow-right {
-    right: 10px;
-  }
-</style>
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr>
       <td style="padding:2.5%;width:100%;vertical-align:middle">
         <heading>Gallery</heading>
-        <div class="gallery-container">
-          <div class="gallery-images">
-            <img src="https://raw.githubusercontent.com/dacian98/images/main/20230310174352.png">
-            <img src="https://raw.githubusercontent.com/dacian98/images/main/285555844_170627852025429_8572303857116918707_n.jpeg">
-            <img src="https://raw.githubusercontent.com/dacian98/images/main/269996845_305198551520042_2172113714766455614_n.jpeg">
-            <!-- <img src="https://raw.githubusercontent.com/dacian98/images/main/278619042_152610437244420_2212313504343868573_n.jpeg"> -->
-            <!-- <img src="https://raw.githubusercontent.com/dacian98/images/main/275768840_505977297579293_8732777314684834308_n.jpeg"> -->
-          </div>
-          <button class="gallery-arrow gallery-arrow-left" onclick="showPreviousImage()">
-            &lt;
-          </button>
-          <button class="gallery-arrow gallery-arrow-right" onclick="showNextImage()">
-            &gt;
-          </button>
-        </div>
+          <center>
+          <figure>
+            <img id="profile-photo" align="top" alt="" src="https://raw.githubusercontent.com/dacian98/images/main/20230316025254.png" width="60%">
+            <figcaption id="caption"></figcaption>
+          </figure>      
+        </center>
 
         <p>
-          More photos are available <a href="gallery.html">here</a>.
+          More photos are available <a href="works.html">here</a>.
         </p>
 
       </td>
@@ -429,52 +257,124 @@
   </tbody>
 </table>
 
-<script>
-  // let currentImage = 0;
-  // let images = document.querySelectorAll('.gallery-images img');
-  // let imageCount = images.length;
-  let currentImage = 0;
-  let images = document.querySelectorAll('.gallery-images img');
-  images = Array.from(images).sort(() => Math.random() - 0.5); // 打乱顺序
-  let imageCount = images.length;
-  showNextImage(); // 随机展示一张照片
+  <script>
+    var imageList = [
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230315160554.png",
+        caption: "Fred Herzog, Vancouver Photographs by Fred Herzog"
+      },
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230315165815.png",
+        caption: "Fred Herzog, Vancouver Photographs by Fred Herzog"
+      },
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230315213855.png",
+        caption: "FRED HERZOG Granville / Robson 1959"
+      },
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316000643.png",
+        caption: "Fred Herzog, Vancouver Photographs by Fred Herzog"
+      },
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316001325.png",
+        caption: "Fred Herzog, Alexander St."
+      },
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316001512.png",
+        caption: "Foot of Main, 1968 © Fred Herzog—Courtesy of Equinox Gallery, Vancouver"
+      },
+     {
+        src: "https://images.squarespace-cdn.com/content/v1/58adfb9237c581abe8c7e5fb/1514998264763-Y7J7RZ1S2YOKD5H2MIYG/07_Neg_0433_FinalForAperture.jpg?format=2500w",
+        caption: "Joel Meyerowitz, Cape Light"
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316002712.png",
+        caption: "William Eggleston, Untitled, 1965-1968"
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316002943.png",
+        caption: "Stephen Shore: American Surfaces, Revised & Expanded Edition"
+      },
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316003751.png",
+        caption: "Stephen Shore: Uncommon Places (Merced River, Yosemite National Park, California, August 13, 1979)"
+      },  
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316005517.png",
+        caption: "Stephen Shore: Uncommon Places (Room 125, Westbank Motel, Idaho Falls, Idaho, July 18, 1973)"
+      },  
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316005733.png",
+        caption: "Kourtney Roy, California 4, 2015"
+      },
+      {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/PAR100088-1712x1200.jpg",
+        caption: "Bruno Barbey, 300,000 supporters of De Gaulle march on the Champs Elysees. 8th arrondissement, Paris. May 30, 1968"
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/the-domain-of-arnheim.jpg",
+        caption: "The Domain Of Arnheim 1962 by Rene Magritte"
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230318163424.png",
+        caption: "L'avenir by René Magritte (1898-1967)"
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230318163737.jpg",
+        caption: "René Magritte (1898-1967), Le domaine d’Arnheim (The Domain of Arnheim)"
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230318164144.png",
+        caption: "René Magritte, Golconda (Golconde), 1953."
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230320132133.png",
+        caption: "Long shot of night road arrowing forlorn into immensities and flat of impossible-to-believe America in New Mexico under the prisoner's moon. (U.S. 285, New Mexico, by Robert Frank, from The Americans.)"
+      },
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/9821e82a-3ecf-4895-8b69-74ef71d6e334.jpeg",
+        caption: "Drive-in movie, Detroit 1955, by Robert Frank, from The Americans."
+      },      
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319221848.png",
+        caption: "Gueorgui Pinkhassov, Hermitage's nightclub: couple amusing themselves. Moscow, Russia. 1993."
+      },      
+     {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319205115.png",
+        caption: "Gueorgui Pinkhassov, Sightwalk Hotel in Akasaka area. Tokyo, Japan. 1996."
+      },    
+    {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319222239.png",
+        caption: "Harry Gruyaert, Ice cream parlour, Las Vegas, Nevada, USA. 1982."
+      },  
+    {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319222340.png",
+        caption: "Harry Gruyaert Freemont Street, Las Vegas, Nevada, USA. 1982."
+      },  
+    {
+        src: "https://raw.githubusercontent.com/dacian98/images/main/9781597115117.jpeg",
+        caption: "Robert Adams, American Silence"
+      },
+      // {
+      //   src: "https://raw.githubusercontent.com/dacian98/images/main/20230316013623.png",
+      //   caption: "Saul Leiter, Deborah at Tante Esther’s, c. 1947"
+      // },
+    ];
 
-  // setInterval(showNextImage, 99999);
+    function updateProfilePhoto() {
+      var randomIndex = Math.floor(Math.random() * imageList.length);
+      var imageSrc = imageList[randomIndex].src;
+      var imageCaption = imageList[randomIndex].caption;
 
-function showNextImage() {
-  let nextImage = currentImage + 1;
-  if (nextImage >= imageCount) {
-    nextImage = currentImage;
-  }
-  images[currentImage].style.display = 'none';
-  images[nextImage].style.display = 'block';
-  
-  // 如果当前是倒数第二张图片，禁用右箭头按钮
-  if (nextImage === imageCount - 2) {
-    document.querySelector('.gallery-arrow-right').disabled = true;
-  }
+      var profilePhoto = document.getElementById("profile-photo");
+      profilePhoto.src = imageSrc;
 
-  currentImage = nextImage;
-}
+      var caption = document.getElementById("caption");
+      caption.textContent = imageCaption;
+    }
 
-function showPreviousImage() {
-  let previousImage = currentImage - 1;
-  if (previousImage < 0) {
-    previousImage = 0;
-  }
-  let nextImage = currentImage;
-  images[currentImage].style.display = 'none';
-  images[previousImage].style.display = 'block';
-  images[nextImage].style.display = 'block';
-
-  // 如果当前是倒数第二张图片，启用右箭头按钮
-  if (nextImage === imageCount - 2) {
-    document.querySelector('.gallery-arrow-right').disabled = false;
-  }
-
-  currentImage = previousImage;
-}
-</script>
+    updateProfilePhoto();
+  </script>
 
 
       </td>

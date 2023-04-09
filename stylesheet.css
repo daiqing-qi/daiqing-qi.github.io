@@ -50,6 +50,30 @@ a:hover {
   }
 }
 
+/* Internship样式设置 */
+@media screen and (max-width: 480px) {
+  /* 针对移动设备的屏幕尺寸设置样式 */
+  td p span {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    float: none;
+  }
+  td p span:first-child {
+    border-right: none;
+  }
+  td p span:last-child {
+    border-left: none;
+  }
+}
+
+  /* 针对电脑的屏幕尺寸设置样式 */
+@media screen and (min-width: 480px) {
+  td p span:last-child {
+    text-align: right;
+    margin-right: 0%;
+  }
+}
 
 /* latin-ext */
 @font-face {

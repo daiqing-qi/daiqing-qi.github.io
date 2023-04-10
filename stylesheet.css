@@ -51,27 +51,12 @@ a:hover {
 }
 
 /* Internship样式设置 */
-@media screen and (max-width: 480px) {
-  /* 针对移动设备的屏幕尺寸设置样式 */
-  td p span {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    float: none;
-  }
-  td p span:first-child {
-    border-right: none;
-  }
-  td p span:last-child {
-    border-left: none;
-  }
-}
 
-  /* 针对电脑的屏幕尺寸设置样式 */
+/* 针对电脑的屏幕尺寸设置样式 */
 @media screen and (min-width: 480px) {
   td p span:last-child {
     text-align: right;
-    margin-right: 0%;
+    margin-right: 20%;
   }
 }
 
@@ -179,10 +164,10 @@ name {
   /*margin-top: 0;*/
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   /*font-size: 32px;*/
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
 }
-
+/* 手机样式 */
 @media screen and (max-width: 600px) {
   name {
     font-size: 20px;

@@ -1,216 +1,151 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Daiqing Qi</title>
-  <meta name="author" content="Daiqing Qi">
+
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Julius+Sans+One&family=Lato:wght@300;400&family=Monda:wght@400;700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+</style>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/temp2.png">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    table {
-      max-width:550px;
-      border:0px;
-      border-spacing:0px;
-      border-collapse:separate;
-      margin-right:auto;
-      margin-left:auto;
-    }
-    
-    /* User defined, delete it if any problem arises */
-    td {
-      padding-left: 2.5%;
-      padding-right: 2.5%;
-    }
+  <title>Daiqing Qi </title>
+  <meta name="description" content="Homepage for Daiqing Qi.">
 
-    div {
-      height: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    
-    tbody {
-      margin-top: 0px;
-    }
-    
-    tbody p:first-child {
-      margin-top: 0;
-    }
-    
-    tbody p {
-      margin: 0;
-    }
+  <!-- <link rel="stylesheet" href="./css_1.css"> -->
+  <!-- <link rel="stylesheet" id="bulma" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" id="bulma" href="./css_2.css" />
+  <link rel="stylesheet" type="text/css" href="./base.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css_3.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
-    figcaption {
-      /*font-size: 0.2em;  Change to the desired font size */
-      font-size: 12px;
-      color: grey; /* Change to the desired font color */
-      text-align: right; /* Align the caption with the left side of the image */
-    }
 
-  </style>
+  <link rel="canonical" href="">
 </head>
 
-<body>
-  <div>
-    <table>
-      <tbody>
-        <tr>
-          <td align="center">
-            <figure>
-              <img id="profile-photo" align="top" alt="" src="https://raw.githubusercontent.com/dacian98/images/main/20230316025254.png" width="100%">
-              <figcaption id="caption"></figcaption>
-            </figure>
-          </td>
-        </tr>
-        <tr>
-          <td align="center">
-            <br>
-              Welcome. 
-          </td>
-        </tr>
-        <tr>
-          <td align="center">
-            <a href="research.html">Profile</a> &nbsp;/&nbsp;
-            <a href="gallery.html">Gallery</a> &nbsp;/&nbsp;
-            <a href="https://daiqing7.github.io/">Blog</a>
-            <!-- <a href="">Blog</a> -->
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <nav class="navbar" role="navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="">
+        Daiqing Qi (祁 岱青) 
+    </a>
+
+    <div class="navbar-burger" data-target="navbar-main">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-  
-  <script>
-    var imageList = [
-      // {
-      //   src: "https://raw.githubusercontent.com/dacian98/images/main/20230315160554.png",
-      //   caption: "Fred Herzog, Vancouver Photographs by Fred Herzog"
-      // },
-      // {
-      //   src: "https://raw.githubusercontent.com/dacian98/images/main/20230315165815.png",
-      //   caption: "Fred Herzog, Vancouver Photographs by Fred Herzog"
-      // },
-      // {
-      //   src: "https://raw.githubusercontent.com/dacian98/images/main/20230315213855.png",
-      //   caption: "FRED HERZOG Granville / Robson 1959"
-      // },
-      // {
-      //   src: "https://raw.githubusercontent.com/dacian98/images/main/20230316000643.png",
-      //   caption: "Fred Herzog, Vancouver Photographs by Fred Herzog"
-      // },
-      // {
-      //   src: "https://raw.githubusercontent.com/dacian98/images/main/20230316001325.png",
-      //   caption: "Fred Herzog, Alexander St."
-      // },
-      {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316001512.png",
-        caption: "Foot of Main, 1968 © Fred Herzog—Courtesy of Equinox Gallery, Vancouver"
-      },
-     {
-        src: "https://images.squarespace-cdn.com/content/v1/58adfb9237c581abe8c7e5fb/1514998264763-Y7J7RZ1S2YOKD5H2MIYG/07_Neg_0433_FinalForAperture.jpg?format=2500w",
-        caption: "Joel Meyerowitz, Cape Light"
-      },
-     {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316002712.png",
-        caption: "William Eggleston, Untitled, 1965-1968"
-      },
-     {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316002943.png",
-        caption: "Stephen Shore: American Surfaces, Revised & Expanded Edition"
-      },
-      {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316003751.png",
-        caption: "Stephen Shore: Uncommon Places (Merced River, Yosemite National Park, California, August 13, 1979)"
-      },  
-      {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316005517.png",
-        caption: "Stephen Shore: Uncommon Places (Room 125, Westbank Motel, Idaho Falls, Idaho, July 18, 1973)"
-      },  
-      {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230316005733.png",
-        caption: "Kourtney Roy, California 4, 2015"
-      },
-      {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/PAR100088-1712x1200.jpg",
-        caption: "Bruno Barbey, 300,000 supporters of De Gaulle march on the Champs Elysees. 8th arrondissement, Paris. May 30, 1968"
-      },
-     // {
-     //    src: "https://raw.githubusercontent.com/dacian98/images/main/the-domain-of-arnheim.jpg",
-     //    caption: "The Domain Of Arnheim 1962 by Rene Magritte"
-     //  },
-     // {
-     //    src: "https://raw.githubusercontent.com/dacian98/images/main/20230318163424.png",
-     //    caption: "L'avenir by René Magritte (1898-1967)"
-     //  },
-     {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230318163737.jpg",
-        caption: "René Magritte (1898-1967), Le domaine d’Arnheim (The Domain of Arnheim)"
-      },
-     {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230318164144.png",
-        caption: "René Magritte, Golconda (Golconde), 1953."
-      },
-     // {
-     //    src: "https://raw.githubusercontent.com/dacian98/images/main/20230320132133.png",
-     //    caption: "Long shot of night road arrowing forlorn into immensities and flat of impossible-to-believe America in New Mexico under the prisoner's moon. (U.S. 285, New Mexico, by Robert Frank, from The Americans.)"
-     //  },
-     {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/9821e82a-3ecf-4895-8b69-74ef71d6e334.jpeg",
-        caption: "Drive-in movie, Detroit 1955, by Robert Frank, from The Americans."
-      },      
-     {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319221848.png",
-        caption: "Gueorgui Pinkhassov, Hermitage's nightclub: couple amusing themselves. Moscow, Russia. 1993."
-      },      
-     {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319205115.png",
-        caption: "Gueorgui Pinkhassov, Sightwalk Hotel in Akasaka area. Tokyo, Japan. 1996."
-      },    
-    {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319222239.png",
-        caption: "Harry Gruyaert, Ice cream parlour, Las Vegas, Nevada, USA. 1982."
-      },  
-    {
-        src: "https://raw.githubusercontent.com/dacian98/images/main/20230319222340.png",
-        caption: "Harry Gruyaert Freemont Street, Las Vegas, Nevada, USA. 1982."
-      },  
-    // {
-    //     src: "https://raw.githubusercontent.com/dacian98/images/main/9781597115117.jpeg",
-    //     caption: "Robert Adams, American Silence"
-    //   },
-      // {
-      //   src: "https://raw.githubusercontent.com/dacian98/images/main/20230316013623.png",
-      //   caption: "Saul Leiter, Deborah at Tante Esther’s, c. 1947"
-      // },
-    ];
 
-    function updateProfilePhoto() {
-      var randomIndex = Math.floor(Math.random() * imageList.length);
-      var imageSrc = imageList[randomIndex].src;
-      var imageCaption = imageList[randomIndex].caption;
+  <div class="navbar-menu" id="navbar-main">
+    <div class="navbar-start">
+      <!-- navbar items -->
+  <!--     <a href="" class="navbar-item">
+        About
+      </a> -->
+      <a class="navbar-item" href="research.html">
+        Profile
+      </a>
+      <a class="navbar-item" href="gallery.html">
+        Gallery
+      </a>
+      <!-- Resume is out-dated
+      <a class="navbar-item" href="/files/chiyuan-resume.pdf">
+        Resume
+      </a>
+      -->
+<!--       <a class="navbar-item" href="/fun/">
+        Fun stuff
+      </a> -->
+      <a class="navbar-item" href="https://daiqing7.github.io/">
+        Blog
+      </a>
+    </div>
 
-      var profilePhoto = document.getElementById("profile-photo");
-      profilePhoto.src = imageSrc;
+    <div class="navbar-end">
+      <!-- navbar items -->
+      <div class="navbar-item">
+        <a href="mailto:daiqing.qi@virginia.edu" class="button is-white">
+          <i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i>
+        </a>
+        <a href="https://scholar.google.com" class="button is-white">
+          <i class="ai ai-lg ai-google-scholar-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/daiqing98" class="button is-white">
+          <i class="fa fa-lg fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/cassadore07/" class="button is-white">
+          <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
+        </a>
+        <!--<a href="https://www.douban.com/people/pluskid/" class="button is-white">
+          <img src="/images/douban.png" width="20" height="20">
+        </a>-->
+      </div>
+    </div>
+  </div>
+</nav>
 
-      var caption = document.getElementById("caption");
-      caption.textContent = imageCaption;
-    }
+      </div>
 
-    updateProfilePhoto();
-  </script>
-</body>
+<div class="hero-body">
+  <div class="container is-full">
+
+
+    <div class="columns">
+
+     <div class="column is-1">
+      <!-- 空列 -->
+    </div>
+
+        <div class="column is-3">
+          <figure class="image">
+            <img src="./images/photo_art.jpg">
+          </figure>
+        </div>
+
+        <div class="column is-7 content">
+          <h1>Daiqing Qi </h1>
+          <p>
+             I am a second-year PhD student at the <a href="https://www.virginia.edu/">University of Virginia</a>, advised by <a href="http://sheng-li.org/">Dr. Sheng Li</a>. Prior to that, I received my bachelor's degree in Electronic Engineering from <a href="https://www.seu.edu.cn/english/">Southeast University</a>. 
+          </p>
+
+          <p>
+          I also spent time at <a href="https://www.amazon.science/">Amazon Search</a> (Palo Alto, CA) with focus on generative AI.
+          </p>
+
+          <h3>Contact</h3>
+          <p>
+          <span class="icon"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i></span>
+          daiqing.qi at virginia.edu
+          </p>
+        </div>
+
+    <div class="column is-1">
+      <!-- 空列 -->
+    </div>
+
+    </div>
+
+  </div>
+</div>
+
+      <div class="hero-foot">
+        <footer class="footer">
+  <div class="container">
+    <div class="content has-text-right is-size-7">
+      <p>
+      Daiqing Qi 2023
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script async type="text/javascript" src="/javascript/bulma.js"></script>
+
+      </div>
+    </section>
+  </body>
 </html>

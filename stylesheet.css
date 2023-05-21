@@ -12,13 +12,15 @@ tr td {
 */
 
 a {
-  color: #74ADC8;
+  /*color: #8DB4C7;*/
+  /*color: #8AA5B8;*/
+  color: #83919B;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #B1B1B1;
   text-decoration: none;
 }
 
@@ -51,14 +53,13 @@ a:hover {
 }
 
 /* Internship样式设置 */
-
 /* 针对电脑的屏幕尺寸设置样式 */
-@media screen and (min-width: 480px) {
+/*@media screen and (min-width: 480px) {
   td p span:last-child {
     text-align: right;
     margin-right: 20%;
   }
-}
+}*/
 
 /* latin-ext */
 @font-face {

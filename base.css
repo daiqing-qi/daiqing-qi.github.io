@@ -1,5 +1,25 @@
-/* Web Fonts */
-/* monda-regular - latin */
+/* DINENGSCHRIFT 字体系列 - Regular */
+@font-face {
+  font-family: 'nova';
+  font-weight: normal; /* 字重为 Regular */
+  src: url('CSS/proxima-nova/Proxima Nova Regular.otf') format('opentype');
+}
+
+/* DINENGSCHRIFT 字体系列 - Light */
+@font-face {
+  font-family: 'nova';
+  font-weight: 300; /* 字重为 Light */
+  src: url('CSS/proxima-nova/Proxima Nova Light.otf') format('opentype');
+}
+
+/* DINENGSCHRIFT 字体系列 - Thin */
+@font-face {
+  font-family: 'nova';
+  font-weight: 100; /* 字重为 Thin */
+  src: url('CSS/proxima-nova/ProximaNova-Thin.otf') format('opentype');
+}
+
+
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -82,13 +102,15 @@ a:hover {
 body { overflow-x: hidden; }
 
 body {
-  font-family: 'Lato', Sans-Serif;
-  font-weight: 400;
+  font-family: 'Raleway', 'hikou-outline-regular', 'nova', Sans-Serif;
+  font-weight: normal;
+  /*font-style: italic;*/
   color: #1A1A1A
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Alegreya Sans SC', Sans-Serif;
   font-weight: 100;
+  font-style: normal;
 }
 
 

@@ -7,7 +7,7 @@
     <!-- This is Squarespace. --><!-- tepito-demo -->
 <base href="">
 <meta charset="utf-8" />
-<title>Pacific Northwest &mdash; Daiqing Qi</title>
+<title>Page &mdash; Daiqing Qi</title>
 <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="shortcut icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico"/>
 <link rel="canonical" href="https://tepito-demo.squarespace.com/home/pacific-northwest"/>
 <meta property="og:site_name" content="Daiqing Qi"/>
@@ -1132,17 +1132,20 @@
         .image-container img {
             max-width: 50%;
             height: auto;
-            padding: 2%; /* 添加内边距 */
+            padding: 0%; /* 添加内边距 */
             max-height: 100vh; /* 设置图片的最大高度为当前视窗的高度 */
+            margin-top: 2%;
+            margin-bottom: 2%;
         }
+    
 
         /* 为第一张图片和最后一张图片添加上下边距 */
         .image-container img:first-child {
-            margin-top: 2%;
+            margin-top: 4%;
         }
         
         .image-container img:last-child {
-            margin-bottom: 2%;
+            margin-bottom: 4%;
         }
 
         /* 在小屏幕上，图片宽度为100% */
@@ -1150,17 +1153,18 @@
 
             .image-container img {
                 max-width: 90%;
-                padding: 10%; 
+                margin-top: 10%;
+                margin-bottom: 10%;
             }
 
-         /* 为第一张图片和最后一张图片添加上下边距 */
-        .image-container img:first-child {
-            margin-top: 10%;
-        }
-        
-        .image-container img:last-child {
-            margin-bottom: 10%;
-        }
+             /* 为第一张图片和最后一张图片添加上下边距 */
+            .image-container img:first-child {
+                margin-top: 20%;
+            }
+            
+            .image-container img:last-child {
+                margin-bottom: 20%;
+            }
         }
     </style>
     
